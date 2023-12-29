@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Полігон для навчаня та тренуваня в програмувані">
+        <meta name="keywords" content="Html, css, javascript, програмуваня">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Тренувальний Полігон</title>
+</head>
+
+<body>
+        <form name="main" enctype="multipart/form-data" method="get" action="mailto:zmax1301@gmail.com">
+                <div tabindex="-1" class="div">
+                        <p>Заблокований Інпут з тайпом text</p>
+                        <input name="nameInput" maxlength="30" placeholder="frfrfrf" value="dwdwd" type="text">
+                </div>
+
+                <div>
+                        <p>Інпут з тайпом password</p>
+                        <input tabindex="1" value="" name="password" type="password">
+                </div>
+
+                <div>
+                        <p>Інпут з тайпом tel</p>
+                        <input tabindex="2" value="" name="tel" type="tel">
+                </div>
+
+                <div>
+                        <p>Радіо кнопки</p>
+                        <p><input tabindex="3" value="first" name="choose1" type="radio">Вибирай</p>
+                        <p><input tabindex="3" value="second" name="choose1" type="radio">Вибирай</p>
+                </div>
+                <br>
+                <div>
+                        <p>Радіо кнопки з вибором по замовчуваням</p>
+                        <p><input tabindex="4" checked value="first" name="choose2" type="radio">Вибирай</p>
+                        <p><input tabindex="4" value="second" name="choose2" type="radio">Вибирай</p>
+                </div>
+
+                <br>
+
+                <div>
+                        <p>Чек бокс</p>
+                        <p><input tabindex="5" checked value="first" name="check" type="checkbox">Вибирай</p>
+                        <p><input tabindex="6" value="second" name="check" type="checkbox">Вибирай</p>
+                </div>
+
+                <br>
+
+                <div>
+                        <p>Вставка файлу</p>
+                        <p><input class="file" tabindex="7" value="file" name="file" type="file">Файл</p>
+                </div>
+
+                <br>
+
+                <div class="area">
+                        <p>Textarea</p>
+                        <textarea maxlength="30" class="textarea" tabindex="8" name="text"></textarea>
+                        <div class="counter">лишилось <span>30</span> символів</div>
+                </div>
+
+                <br>
+
+                <div>
+                        <p>Селект з опшинами </p>
+                        <select multiple tabindex="9" name="select">
+                                <option value="first">1</option>
+                                <option selected value="second">2</option>
+                                <option selected value="third">3</option>
+                        </select>
+
+                </div>
+
+                <br>
+
+                <div>
+                        <p>Кнопки для віправи та ресету форми</p>
+                        <button type="submit">Відправити</button>
+                        <button type="reset">Ресет</button>
+                </div>
+
+
+        </form>
+        <div class="element4">
+                4
+        </div>
+        <div class="element1">
+                1
+                <div class="element2">
+                        2
+                        <div class="element3">
+                                3
+                        </div>
+                </div>
+        </div>
+
+
+        <nav class="menu">
+                <button type="button" class="menu__button">
+                        <span>Відкрити</span>
+                        <span>Закрити</span>
+                </button>
+                <ul hidden class="menu__list">
+                        <li><a href="" class="menu__link">1</a></li>
+                        <li><a href="" class="menu__link">2</a></li>
+                        <li><a href="" class="menu__link">3</a></li>
+                        <li><a href="" class="menu__link">4</a></li>
+                        <li><a href="" class="menu__link">5</a></li>
+                </ul>
+        </nav>
+        <div class="link">
+                <span>ffrfrfrf</span><span>ffrfrfrf</span><span>ffrfrfrf</span>
+        </div>
+        <img class="img" src="C:\Users\Admin\Desktop\Max\сайт3\img\78ff51430f8383f750d47038611cb47b.png" alt="Картинка">
+        <div class="menu2">
+                <button is="my-button" type="button" class="menu__button2">
+                        <span>Відкрити</span>
+                        <span>Закрити</span>
+                </button>
+                
+                <div class="area2">
+                        <p>Textarea</p>
+                        <textarea maxlength="30" class="textarea2" tabindex="8" name="text"></textarea>
+                        <div class="counter2">лишилось <span>30</span> символів</div>
+                </div>
+        </div>
+        <my-element>frfrfr</my-element>
+
+<time-formatted id="elem"
+        year="numeric" month="long" day="numeric"
+        hour="numeric" minute="numeric" second="numeric"
+        time-zone-name="short">
+</time-formatted>
+<user-info>Джон</user-info>
+<show-hello name="max"></show-hello>
+<my-element-2 name="Max"></my-element-2>
+
+        <section>
+                <ul>
+                        <li><span>jjj</span></li>
+                </ul>
+        </section>
+        <template id="element-li">
+                <li><span>jjj</span></li>
+                <div>4</div>
+        </template>
+
+        <user-card>
+                vfvv
+                <div slot="username">ff</div>
+                <div slot="username">fffff</div>
+                <div>ffsdfghjhgffff</div>
+                <div>ffsdfghjhgffff</div>
+        </user-card>
+
+        <custom-menu id="menu">
+                <span slot="title">Сладости</span>
+                <li slot="item">Леденцы</li>
+                <li slot="item">Фруктовые тосты</li>
+                <li slot="item">Кексы</li>
+              </custom-menu>
+              <template id="tmpl">
+                <style>
+                  /* стиль будет применён изнутри к элементу <custom-dialog> */
+                  :host {
+                    position: fixed;
+                    /* left: 50%;
+                    top: 50%; */
+                    /* transform: translate(-50%, -50%); */
+                    display: inline-block;
+                    border: 1px solid rgb(30, 17, 17);
+                    padding: 10px;
+                  }
+                  :host([centre]){
+                        transform: translate(-50%, -50%);
+                        left: 50%;
+                    top: 50%;
+                  }
+                </style>
+                <slot></slot>
+              </template>
+
+                <custom-dialog centre>
+                        Hello!
+                      </custom-dialog>
+
+                      <style>
+                        user-card {
+                                color: var(--user-card-field-color, black);
+                          --user-card-field-color:green
+                          /* если переменная --user-card-field-color не определена, будет использован цвет black */
+                        }
+                        .field {
+    color: var(--user-card-field-color, rgb(227, 22, 22));
+    }
+                      </style>
+                      <div class="field">Имя: <slot name="username"></slot></div>
+                      <div class="field">Дата рождения: <slot name="birthday"></slot></div>
+
+                      <user-card2 id="userCard">
+                        <span slot="username">KKKK</span>
+                      </user-card2>
+
+
+
+                      <button id="but" onclick="console.log(`fdfwds`)">Кнопочка</button>
+
+                      <pre id="rabbit">
+                        w
+                         w
+                          w w
+                          w w
+                          w wwwwwwwwww
+                          w w
+                          w w
+                          w w
+                          w
+                      </pre>
+                      <button id="but2" onclick="hide()">Кнопочка2</button>
+        <script src="JS.js"></script>
+</body>
+
+</html>
