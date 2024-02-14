@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.element1 {
+  padding: 10px;
+  background-color: red;
+}
+
+.element2 {
+  padding: 10px;
+  background-color: rgb(0, 255, 4);
+}
+
+.element3 {
+  padding: 10px;
+  background-color: rgb(38, 0, 255);
+}
+
+.menu__button span:first-child {
+  display: block;
+}
+
+.menu__button span:last-child {
+  display: none;
+}
+
+.menu._active .menu__button span:first-child {
+  display: none;
+}
+
+.menu._active .menu__button span:last-child {
+  display: block;
+}
+
+.menu__list {
+  display: none;
+}
+
+.menu._active .menu__list {
+  display: block;
+}
+
+.menu__button2 span:first-child {
+  display: block;
+}
+
+.menu__button2 span:last-child {
+  display: none;
+}
+
+.menu2._active .menu__button2 span:first-child {
+  display: none;
+}
+
+.menu2._active .menu__button2 span:last-child {
+  display: block;
+}
+
+.area2 {
+  display: none;
+}
+
+.menu2._active .area2 {
+  display: block;
+}
+
+.file::-webkit-file-upload-button {
+  background-color: red;
+}
+
+.file {
+  background-color: rgb(255, 0, 0);
+}
+
+user-card:host {
+  background-color: aqua;
+}
